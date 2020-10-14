@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kufam&family=Lato:wght@100&family=Lexend+Peta&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #logo {
+        margin: 10px 34px;
+
+    }
+
+    #logo img {
+        height: 91px;
+        margin: 0px 4px;
+
+    }
+
+    #navbar {
+        position: relative;
+    }
+
+    #navbar ul {
+        display: flex;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.3 rem;
+    }
+
+    #navbar ul li a {
+        color: rgb(53, 53, 53);
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    #navbar::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    #navbar ul li a:hover {
+        color: white;
+        background-color: rgb(47, 201, 212);
+    }
+
+    .first img {
+        width: 555px;
+        height: 555px;
+        margin: 2px 27px;
+        padding: 2px;
+    }
+
+    .first-H {
+        float: right;
+        width: 555px;
+        height: 555px;
+        word-wrap: normal;
+        margin: 2px 27px;
+        padding: 2px;
+    }
+
+    .para1 {
+        font-family: 'Lato', sans-serif;
+        color: rgb(114, 113, 113);
+        line-height: 30px;
+        font-weight: 600;
+        font-style: inherit;
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 2px;
+
+    }
+
+    .head1 {
+        font-weight: bold;
+        font-size: 45px;
+        margin: 13px 13px;
+        padding: 8px 8px;
+        font-size: 19px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 5px;
+    }
+
+    .iteam {
+        font-family: 'Lato', sans-serif;
+        font-weight: 1000;
+        letter-spacing: 3px;
+        margin: 13px 13px;
+        padding: 8px 8px;
+        font-size: 19px;
+    }
+
+    .head2 img {
+        width: 555px;
+        height: 555px;
+        margin: 2px 27px;
+        padding: 2px;
+    }
+
+    .classpara2 {
+        font-family: 'Lato', sans-serif;
+        color: rgb(114, 113, 113);
+        line-height: 30px;
+        font-weight: 900;
+        font-style: inherit;
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+
+    .classhead1 {
+        color: #0a0a0a;
+        font-weight: bold;
+        font-size: 45px;
+        margin: 13px 13px;
+        padding: 8px 8px;
+        font-size: 19px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 5px;
+    }
+
+    .second-H {
+        float: left;
+        word-wrap: normal;
+        margin: 2px 27px;
+        padding: 2px;
+        width: 555px;
+        height: 555px;
+    }
+
+    .footer {
+        display: flex;
+        float: center;
+        background: black;
+        color: white;
+        height: 75px;
+        width: 100%;
+        position: relative;
+        text-align: left;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    .footer-1 {
+        margin: 26px 189px;
+        padding: 2px 22px;
+    }
+
+    .link {
+        margin: 26px 132px;
+        padding: 2px 84px;
+    }
+
+    /* Media queries for phone*/
+    @media (max-width: 414px) {
+        #navbar {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 414px) {
+        #navbar ul li a {
+            color: rgb(53, 53, 53);
+            display: block;
+            padding: 3px 3px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 0.9 rem;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .first img {
+            width: 372px;
+            height: 372px;
+            margin: 2px 17px;
+            padding: 2px;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .first-H {
+            border: 2px solid black;
+            flex-direction: column;
+            width: 372px;
+            height: 372px;
+            word-wrap: normal;
+            margin: 2px 17px 32px 2px;
+            padding: 0px 2px 24px 2px;
+        }
+    }
+
+
+    @media (max-width: 414px) {
+        .para1 {
+            font-family: 'Lato', sans-serif;
+            color: rgb(114, 113, 113);
+            line-height: 20px;
+            font-weight: 600;
+            font-style: initial;
+            font-size: 13px;
+            text-align: left;
+            letter-spacing: 2px;
+
+        }
+    }
+
+    @media (max-width: 414px) {
+        .head2 img {
+            flex-direction: column;
+            width: 372px;
+            height: 372px;
+            margin: 2px 17px;
+            padding: 2px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .classpara2 {
+            font-family: 'Lato', sans-serif;
+            color: rgb(114, 113, 113);
+            line-height: 20px;
+            font-weight: 600;
+            font-style: initial;
+            font-size: 13px;
+            text-align: left;
+            letter-spacing: 2px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .second-H {
+            border: 2px solid black;
+            flex-direction: column;
+            width: 372px;
+            height: 372px;
+            word-wrap: normal;
+            margin: 14px 25px 28px 14px;
+            padding: 0px 2px 68px 2px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .iteam {
+            font-family: 'Lato', sans-serif;
+            font-weight: 1000;
+            letter-spacing: 3px;
+            margin: 0px 4px;
+            padding: 9px 13px;
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 414px){
+        .footer {
+            text-align: unset;
+        height: 50px;
+        width: 100%;
+    }
+    }
+    @media (max-width: 414px) {
+        .footer-1 {
+        margin: 10px 2px;
+        padding: 2px 2px;
+    }
+    }
+    @media (max-width: 414px) {
+        .link {
+        margin: 10px 2px;
+        padding: 2px 2px;
+    }
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="image/logo.png" alt="#"></a>
+        </div>
+        <ul>
+            <li class="iteam"><a href="index.html">Home</a></li>
+            <li class="iteam"><a href="services.html">Services</a></li>
+            <li class="iteam"><a href="aboutus.html">About Us</a></li>
+            <li class="iteam"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="first">
+        <img src="image/pic-1.jpg" alt="#">
+        <section class="first-H">
+            <br>
+            <h1 class="head1">WHAT WE DO</h1>
+            <p class="para1">We create designs in a collaborative environment enabling us to deliver the client’s
+                ultimate vision. Our
+                designs are current, yet still possess a timeless style generating broad market appeal. Our reputation
+                for outstanding service and our innovative design style creates an extremely successful partnership with
+                our clients.</p>
+            <p class="para1">It is our passion to constantly pursue fresh inspiration. Our designers continually search
+                for the most
+                compelling design styles and highest quality of materials available. Hours of extensive market research
+                allow us to create each design specific to your target market. We take pride in our work ethic, our eye
+                for innovative designs, and our commitment to our clients.</p>
+        </section>
+    </div>
+    <div class="head2">
+        <img src="image/pic4.jpg" alt="#">
+        <section class="second-H">
+            <h1 class="classhead1"><strong>WHO WE ARE</strong></h1>
+            <p class="classpara2">We are professionally trained to create a functional & quality interior environment.
+                [ex:
+                houses, hotels, restaurants, stores, medical facilities, office complexes & more .]
+                This job requires artistry & creativity in order to create functional spaces that are visually appearing
+                &
+                meet requirements of clients</p>
+            <p class="classpara2">Prepare working drawings & specifications for interior construction materials,
+                finishes,
+                space planning, lighting, furnishings & equipment.
+                Estimate costs of material, labour & time, and give estimates to clients for approval.
+                Work with specialists in technical areas concerned with fire, hydraulics, & mechanical, electrical &
+                structural design, making sure that industry regulations are met.
+            </p>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="footer-1">
+            &copy;Abstract Interior 2020|Design By Abstract Interior
+        </div>
+        <div class="link">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/abstractinteriorsolutions/"><i class="fab fa-instagram"></i></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+
+        </div>
+    </div>
+</body>
+
+</html>
